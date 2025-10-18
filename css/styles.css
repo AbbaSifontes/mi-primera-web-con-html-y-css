@@ -1,80 +1,193 @@
-html{
-    font-family:helvetica;
-    background-color: #ddd;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+    color:#333;
+    box-sizing: border-box; /* AÑADI ESTO */
 }
-.container{
-    max-width: 1100px;
-    background-color: #fff;
-    position: relative;
-    margin: 50px auto;
-    padding: 20px 50px;
+body{
+    margin: 0;
+    overflow-x: hidden;
 }
+ .container{
+    margin: 5% 5%;
+   }
+.featured-image{
+    width: 100%;
+    padding-left: 0; /*QUITE EL PADDING */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure .centrada,
+figure .canserbero,
+figure .can {
+    width: 100%; /*TODAS AL 100% */
+    max-width: 100%;
+    display: block;
+}
+
 .bold{
     font-weight: bold;
 }
-/* header */
-.header{
+
+.featured-image figcaption{
+    font-size: 14px;
+    width: 100%; 
+    text-align: center;
+}
+figcaption{
+    font-size: 14px;
+    width: 100%;
     text-align: center;
 }
 .main-title{
-    font: size 40px; ;
+    text-align: center;
 }
+
 .main-paragraph{
-    font-style: italic;
-}
-/* Imagem destaque */
-.featured-image{
     text-align: center;
-    margin-top: 30px;
-}
-.featured-image img{
-     width: 400px;
-    height: auto;
-}
-/* biography*/
-.biography-container{
-    margin: 25px 0px;
-    padding: 25px 0px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
+    font-size: 15px;
 }
 
-/*discografia*/
-.discography-container{
-     margin: 25px 0px;
-    padding: 25px 0px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
-}
-.discography-container figcaption{
-    text-align: center;
+.container-blockquote {
+    background-color: #979595;
+    width: 100%;
 }
 
-.centrada {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  height: 400px;
-  width: auto;
+.container-blockquote blockquote,
+.container-blockquote p {
+    background-color: #979595;
 }
 
-/* Quotes */
-.container-blockquote{
-    background-color: #ddd;
-    padding: 30px;
-}
 .container-blockquote blockquote{
+    font-size: 18px;
     font-weight: bold;
-    font-size: 30px;
+    color: #000;
+    margin: 0;
+    padding: 15px;
+}
+
+.img-bold figcaption{
+    font-size: 14px; 
+    width: 100%;
+    text-align: center;
+}
+
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff48;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.boton-enlace:hover {
+    background-color: #6df385;
+    transition: 0.5s;
+    color: #000;
+}
+@media (min-width: 426px){
+     .container{
+    margin: 5% 5%;
+   }
+   figure .centrada,
+figure .canserbero,
+figure .can {
+    width: 90%; /*TODAS AL 100% */
+    max-width: 90%;
+    display: block;
+    padding-left: 10%;
+}
+}
+@media (min-width: 1023px){
+   .container{
+    margin: 5% 5%;
+   }
+    figure .centrada,
+figure .canserbero,
+figure .can {
+    width: 40%; /*TODAS AL 100% */
+    max-width: 40%;
+    display: block;
+    margin-left: 25%;
+}
+.container-blockquote {
+    background-color: #979595;
+    width:100%;
+}
+
+}
+@media (min-width: 2559px){
+   .main-title{
+    font-size: 1100%;
+      }
+    .main-paragraph {
+    text-align: center;
+    font-size: 500%;
+}
+    .container{
+    margin: 5% 5%;
+   }
+    figure .centrada,
+figure .canserbero,
+figure .can {
+    width: 50%; /*TODAS AL 100% */
+    max-width: 50%;
+    display: block;
+    margin-left: 20%;
+}
+.featured-image figcaption {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+.biography-container{
+    font-size: 50px;
+}
+.discography-container{
+    font-size: 50px;
+}
+
+.container-blockquote {
+    background-color: #979595;
+    width:100%;
 }
 .container-blockquote p{
-    font-style: italic;
+    font-size: 100px;
 }
-.img-bold{
+.container-blockquote blockquote {
+    font-size: 100px;
+}
+.mas-informacion h2{
+    font-size: 100px;
+}
+.mas-informacion p{
+    font-size: 50px;
+}
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff48;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100px;
     text-align: center;
-    padding: 30px;
 }
-.img-bold img{
-    width: 400px;
-    height: auto;
+
+.boton-enlace:hover {
+    background-color: #6df385;
+    transition: 0.5s;
+    color: #000;
+}
 }
